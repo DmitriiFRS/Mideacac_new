@@ -3,6 +3,8 @@ import "./Main.scss";
 import bg from "../../public/img/mainframebg.jpg";
 import "../globals.css";
 import mainvideo from "../../public/video/mainvideo.png";
+import { Typewriter } from "react-simple-typewriter";
+import MainframeTitle from "./MainframeTitle";
 
 function Mainframe() {
   return (
@@ -22,12 +24,7 @@ function Mainframe() {
           </picture>
         </div>
         <div className="mainframe__subtitleContainer relative z-10 flex justify-end">
-          <div className="mainframe__subtitleBody">
-            <h2 className="mainframe__subtitle text-end">
-              Midea MagBoost - это прорыв в системах охлаждения, который
-              навсегда изменит ваши представления о надежностии эффективности
-            </h2>
-          </div>
+          <MainframeTitle />
         </div>
       </div>
     </section>
