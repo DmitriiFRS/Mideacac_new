@@ -42,6 +42,16 @@ function Frame2() {
           })}
         </ul>
       </div>
+      <div className="frame2__videoContainer absolute right-0 top-0 z-10">
+        <video
+          className="frame2__sideVideo absolute z-10 h-full"
+          autoPlay
+          muted
+          loop
+        >
+          <source src="/video/frame2Sidevideo.mp4" type="video/mp4" />
+        </video>
+      </div>
     </section>
   );
 }
