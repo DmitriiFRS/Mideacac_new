@@ -66,20 +66,28 @@ $lh110: 110%;
       margin: 25px 0 0 0;
     }
     &:nth-child(1) {
-      transform: translateX(-80px);
+      transform: translateX(-130px);
     }
     &:nth-child(2) {
-      transform: translateX(5px);
+      transform: translateX(-30px);
     }
     &:nth-child(3) {
-      transform: translateX(90px);
+      transform: translateX(60px);
     }
     &:last-child {
-      transform: translateX(180px);
+      transform: translateX(160px);
+    }
+  }
+  &__title {
+    &:nth-child(2) {
+      transform: translateX(15px);
+    }
+    &:nth-child(3) {
+      transform: translateX(30px);
     }
   }
   &__img {
-    margin: 25px 0 0 0;
+    margin: 25px auto 0 auto;
   }
   &__videoContainer {
     right: -170px;

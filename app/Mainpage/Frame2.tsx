@@ -1,6 +1,7 @@
 import Image from "next/image";
 import bg from "../../public/img/frame2bg.jpg";
 import line from "../../public/img/line.png";
+import Frame2Titles from "./Frame2Titles";
 
 const titles = [
   "Минимальный шум: благодаря электромагнитной технологии снижается уровень шума. Работа оборудования комфортной и приемлемой для окружающей среды.",
@@ -18,29 +19,7 @@ function Frame2() {
             <Image src={bg} alt="" fill={true} priority={true} quality={100} />
           </div>
         </div>
-        <ul className="frame2__list relative z-10">
-          {titles.map((el, index) => {
-            return (
-              <li
-                key={index}
-                className="frame2__item flex flex-col items-center"
-              >
-                <p className="frame2__title">{el}</p>
-                {index !== 3 ? (
-                  <Image
-                    className="frame2__img"
-                    src={line}
-                    alt="line"
-                    width={417}
-                    height={35}
-                  />
-                ) : (
-                  ""
-                )}
-              </li>
-            );
-          })}
-        </ul>
+        <Frame2Titles />
       </div>
       <div className="frame2__videoContainer absolute right-0 top-0 z-10">
         <video
