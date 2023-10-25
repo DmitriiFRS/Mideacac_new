@@ -20,7 +20,7 @@ function Mainframe() {
           </div>
           <MainframeVideo />
         </div>
-        <div className="mainframe__subtitleContainer relative z-10 flex justify-end">
+        <div className="mainframe__subtitleContainer relative z-30 flex justify-end">
           <MainframeTitle />
         </div>
       </div>
