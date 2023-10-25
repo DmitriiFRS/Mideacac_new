@@ -2,8 +2,8 @@ import Image from "next/image";
 import "./Main.scss";
 import bg from "../../public/img/mainframebg.jpg";
 import "../globals.css";
-import mainvideo from "../../public/video/mainvideo.png";
 import MainframeTitle from "./MainframeTitle";
+import MainframeVideo from "./MainframeVideo";
 
 function Mainframe() {
   return (
@@ -18,14 +18,7 @@ function Mainframe() {
           <div className="mainframe__titleBody inline-flex">
             <h1 className="mainframe__title uppercase">MIDEA|CAC</h1>
           </div>
-          <video
-            autoPlay
-            loop
-            muted
-            className="mainframe__video w-screen h-screen"
-          >
-            <source src="/video/mainvideo.mp4" type="video/mp4" />
-          </video>
+          <MainframeVideo />
         </div>
         <div className="mainframe__subtitleContainer relative z-10 flex justify-end">
           <MainframeTitle />
