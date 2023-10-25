@@ -1,13 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Didact_Gothic } from "next/font/google";
+import { Inter, Didact_Gothic, Poiret_One } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const didact = Didact_Gothic({
   subsets: ["cyrillic-ext"],
   weight: "400",
-  variable: "--font-Didact_Gothic",
+});
+const poiret = Poiret_One({
+  subsets: ["cyrillic"],
+  weight: ["400"],
+  variable: "--font-Poiret_One",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${didact.variable}`}>
+      <body className={`${didact.className}`}>
         <div className="wrapper">{children}</div>
       </body>
     </html>
