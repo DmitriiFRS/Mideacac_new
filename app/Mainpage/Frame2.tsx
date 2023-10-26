@@ -2,6 +2,8 @@ import Image from "next/image";
 import bg from "../../public/img/frame2bg.jpg";
 import line from "../../public/img/line.png";
 import Frame2Titles from "./Frame2Titles";
+import Frame2VideoLeft from "./Frame2VideoLeft";
+import Frame2VideoRight from "./Frame2VideoRight";
 
 const titles = [
   "Минимальный шум: благодаря электромагнитной технологии снижается уровень шума. Работа оборудования комфортной и приемлемой для окружающей среды.",
@@ -22,24 +24,10 @@ function Frame2() {
         <Frame2Titles />
       </div>
       <div className="frame2__videoContainer absolute z-10">
-        <video
-          className="frame2__sideVideo absolute z-10 h-full"
-          autoPlay
-          muted
-          loop
-        >
-          <source src="/video/frame2Sidevideo.mp4" type="video/mp4" />
-        </video>
+        <Frame2VideoRight />
       </div>
       <div className="frame2__videoContainer2 absolute z-10">
-        <video
-          className="frame2__sideVideo2 absolute z-10 h-full"
-          autoPlay
-          muted
-          loop
-        >
-          <source src="/video/frame2Sidevideo2.mp4" type="video/mp4" />
-        </video>
+        <Frame2VideoLeft />
       </div>
     </section>
   );
