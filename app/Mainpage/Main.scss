@@ -10,8 +10,6 @@ $lh110: 110%;
   &__img {
     min-height: 900px;
   }
-  &__imgBody {
-  }
   &__video {
     max-height: 500px;
     max-width: 900px;
@@ -63,7 +61,7 @@ $lh110: 110%;
     font-size: 21px;
     line-height: $lh110;
     opacity: 0;
-    transition: 0.5s;
+    transition: 1s ease-in-out;
     &__active {
       opacity: 1;
     }
@@ -126,4 +124,54 @@ $lh110: 110%;
 }
 .frame3 {
   min-height: 900px;
+  &__container {
+    padding: 96px 0;
+  }
+  &__video {
+    position: relative;
+    z-index: 200;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  &__titles {
+    height: 100px;
+    background: #fff;
+    box-shadow: -5px -5px 25px 0px rgba(0, 0, 0, 0.35);
+    padding: 15px 0px;
+    max-width: 674px;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 110%;
+    text-align: center;
+  }
+  &__list {
+    margin: 200px 0 0 0px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 110%;
+  }
+  &__item {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 0.5s;
+    &__active {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    &:first-child {
+      margin: 0 0 0 30%;
+    }
+    &:nth-child(2) {
+      margin: 45px 0 0 0;
+    }
+    &:nth-child(3) {
+      margin: 45px 0 0 -20%;
+    }
+    &:last-child {
+      margin: 45px 0 0 -40%;
+    }
+  }
 }
