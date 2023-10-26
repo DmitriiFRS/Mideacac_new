@@ -14,7 +14,7 @@ const titles = [
 
 function Frame2() {
   return (
-    <section className="frame2 relative">
+    <section className="frame2 relative h-screen">
       <div className="container h-full flex items-center justify-center">
         <div className="mainframe__img absolute left-0 top-0 w-full h-full">
           <div className="main__imgBody relative w-full h-full">

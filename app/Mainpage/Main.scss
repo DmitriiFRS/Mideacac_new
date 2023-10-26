@@ -55,7 +55,6 @@ $lh110: 110%;
 }
 
 .frame2 {
-  height: 100vh;
   min-height: 900px;
   &__item {
     max-width: 630px;
@@ -123,4 +122,7 @@ $lh110: 110%;
     transform: rotate(33.5deg);
     object-fit: cover;
   }
+}
+.frame3 {
+  min-height: 900px;
 }
