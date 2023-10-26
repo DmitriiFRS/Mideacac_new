@@ -60,8 +60,13 @@ $lh110: 110%;
   &__item {
     max-width: 630px;
     color: #1e1d1b;
-    font-size: 20px;
+    font-size: 21px;
     line-height: $lh110;
+    opacity: 0;
+    transition: 0.5s;
+    &__active {
+      opacity: 1;
+    }
     &:not(:first-child) {
       margin: 25px 0 0 0;
     }
