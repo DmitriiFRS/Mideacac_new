@@ -1,6 +1,5 @@
 import Image from "next/image";
 import bg from "../../public/img/frame2bg.jpg";
-import line from "../../public/img/line.png";
 import Frame2Titles from "./Frame2Titles";
 import Frame2VideoLeft from "./Frame2VideoLeft";
 import Frame2VideoRight from "./Frame2VideoRight";
@@ -14,7 +13,7 @@ const titles = [
 
 function Frame2() {
   return (
-    <section className="frame2 relative h-screen">
+    <section className="frame2 relative h-screen z-10">
       <div className="container h-full flex items-center justify-center">
         <div className="mainframe__img absolute left-0 top-0 w-full h-full">
           <div className="main__imgBody relative w-full h-full">
@@ -29,6 +28,7 @@ function Frame2() {
       <div className="frame2__videoContainer2 absolute z-10">
         <Frame2VideoLeft />
       </div>
+      <div className="frame2__shadowLeft"></div>
     </section>
   );
 }
