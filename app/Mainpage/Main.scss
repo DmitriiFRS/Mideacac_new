@@ -13,7 +13,6 @@ $lh110: 110%;
   &__video {
     max-height: 500px;
     max-width: 900px;
-    margin: 25px 0 0 0;
     border-radius: 20px;
   }
   &__titleBody {
@@ -89,8 +88,16 @@ $lh110: 110%;
       transform: translateX(30px);
     }
   }
-  &__img {
+  &__divider {
     margin: 25px auto 0 auto;
+    width: 80%;
+    height: 4px;
+    filter: blur(2px);
+    background: #adadad;
+    border-radius: 30px;
+    animation-name: dividerAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
   }
   &__videoContainer {
     right: -154px;
@@ -173,5 +180,16 @@ $lh110: 110%;
     &:last-child {
       margin: 45px 0 0 -40%;
     }
+  }
+}
+
+@keyframes dividerAnimation {
+  50% {
+    background: #686868;
+    filter: blur(1px);
+  }
+  100% {
+    background: #adadad;
+    filter: blur(2px);
   }
 }

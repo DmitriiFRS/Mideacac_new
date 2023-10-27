@@ -30,7 +30,7 @@ const titles = [
 function Frame2Titles() {
   const [isView, setIsView] = useState<boolean>(false);
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0.5,
   });
   useEffect(() => {
     setIsView(inView);
@@ -40,7 +40,7 @@ function Frame2Titles() {
       {titles.map((el, index) => {
         return (
           <li
-            style={{ transitionDelay: `${index / 5}s` }}
+            style={{ transitionDelay: isView ? `${index / 3}s` : "0s" }}
             key={index}
             className={`frame2__item ${
               isView ? "frame2__item__active" : ""
@@ -50,13 +50,7 @@ function Frame2Titles() {
             <p className="frame2__title">{el[1]}</p>
             {el.length === 3 ? <p className="frame2__title">{el[2]}</p> : ""}
             {index !== 3 ? (
-              <Image
-                className="frame2__img"
-                src={line}
-                alt="line"
-                width={417}
-                height={35}
-              />
+              <div className="frame2__divider relative"></div>
             ) : (
               ""
             )}

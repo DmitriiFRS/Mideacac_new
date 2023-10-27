@@ -18,10 +18,10 @@ function Mainframe() {
           <div className="mainframe__titleBody inline-flex">
             <h1 className="mainframe__title uppercase">MIDEA|CAC</h1>
           </div>
-          <MainframeVideo />
         </div>
-        <div className="mainframe__subtitleContainer relative z-30 flex justify-end">
+        <div className="mainframe__subtitleContainer relative z-30 flex gap-10">
           <MainframeTitle />
+          <MainframeVideo />
         </div>
       </div>
     </section>
