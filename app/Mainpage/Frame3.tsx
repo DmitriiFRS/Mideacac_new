@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Frame3Video from "./Frame3Video";
 import Frame3Typography from "./Frame3Typography";
-import bg from "../../public/img/Frame3bg.jpg";
 
 function Frame3() {
   return (
     <section className="frame3 relative h-screen z-10">
+      <div className="frame3__bg absolute left-0 top-0 h-full w-full z-30"></div>
       <video
-        className="frame3__videobg fixed left-0 top-0 bg-cover w-full h-full"
+        className="frame3__videobg fixed left-0 top-0 w-full h-full"
         autoPlay
         muted
         loop

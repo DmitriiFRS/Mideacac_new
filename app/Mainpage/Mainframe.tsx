@@ -9,7 +9,7 @@ function Mainframe() {
   return (
     <section className="mainframe relative">
       <div className="container">
-        <div className="mainframe__img absolute left-0 top-0 w-full h-full z-20">
+        <div className="mainframe__img absolute left-0 top-0 w-full h-full z-30">
           <div className="main__imgBody relative w-full h-full">
             <Image src={bg} alt="" fill={true} priority={true} quality={100} />
           </div>
